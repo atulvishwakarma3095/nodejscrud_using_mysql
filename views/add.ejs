@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Users</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Add Users</h1>
+	<form action="/addusers"  autocomplete="off">
+		<label>Fullname</label>
+		<input type="text" id="txtname" name="txtname" placeholder="Fullname">
+		<label>Contact</label>
+		<input type="text" id="txtcontact" name="txtcontact" placeholder="Contact">
+		<label>Email</label>
+		<input type="text" id="txtemail" name="txtemail" placeholder="Email">
+		<label>Gender</label>
+		<input type="radio" id="txtgender" name="txtgender" value="Male">Male
+		<input type="radio" id="txtgender" name="txtgender" value="Female">Female
+		<button type="submit">Add Users</button>
+	</form>
+	<% if(mesg){ %>
+	<h3>Data Inserted..!</h3>
+	<a href="/">Back to home</a>
+	<%}%>
+</body>
+</html>
